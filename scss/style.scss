@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.categories {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.products {
+  padding: 20px;
+}
+
+.product {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.product-info {
+  padding: 20px;
+  background-color: #f0f0f0;
+  display: none;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-field{
+  width: 200px;
+}
+
+#field-comments{
+  display: flex;
+}
+
+#comments{
+  resize: none;
+}
+
+#container-modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(24 29 31 / 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Стилізація загального контейнера форми */
+.custom-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Стилізація полів вводу та вибору */
+.modal-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стилізація вибіркових елементів */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px;
+  background-size: 20px;
+}
+
+/* Стилізація радіокнопок та їхніх підписів */
+#field-cash input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Стилізація кнопки "Submit" */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#modal-window{
+  background: #fff;
+  padding: 32px 92px 60px 92px;
+  position: relative;
+}
+

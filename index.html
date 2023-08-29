@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hw 30</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="categories">
+        <ul>
+          <li class="category" onclick="showCategory('electronics')">
+            Електроніка
+          </li>
+          <li class="category" onclick="showCategory('clothing')">Одяг</li>
+          <!-- Додайте інші категорії тут -->
+        </ul>
+      </div>
+      <div class="products">
+        <!-- Сюди буде вставлятися список товарів -->
+      </div>
+      <div class="product-info">
+        <!-- Сюди буде вставлятися інформація про товар -->
+      </div>
+    </div>
+    <div id="container-modal">
+      <div id="modal-window">
+        <form action="#" id="form">
+            <div id="field-user-name">
+              <label for="user-name">ПІБ:</label>
+              <input id="user-name" type="text" name="user-name" class="modal-field" required>
+            </div>
+            <div id="field-user-city">
+              <label for="city">Виберіть місто відправки:</label>
+              <select name="city" id="city" class="modal-field" required>
+                <option value="kiev">Київ</option>
+                <option value="odessa">Одеса</option>
+                <option value="kharkiv">Харків</option>
+                <option value="lviv">Львів</option>
+              </select>
+            </div>
+            <div id="field-user-post">
+              <label for="post">Виберіть відділення НП:</label>
+              <select name="post" id="post" class="modal-field" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div id="field-cash">
+              <input type="radio" name="cash" id="send-to-card" value="card" required>
+              <label for="send-to-card">Оплата на картку</label>
+              <input type="radio" name="cash" id="after" value="cash" required>
+              <label for="after">Післяоплата</label>
+            </div>
+            <div id="field-cout-production">
+              <label for="count">Кількість</label>
+              <select name="count" id="count" class="modal-field" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div id="field-comments">
+              <label for="comments">Ваші коментарі:</label>
+              <textarea name="comments" type="text" id="comments" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Купити">
+            </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
